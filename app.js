@@ -10,7 +10,7 @@
     const app = express();                        // Create an Express app
 
     app.use(cors({
-    origin: 'https://todo-ghbcrdlut-manoj-kumar-gaddameedis-projects.vercel.app/', // replace with your Vercel domain
+    origin: 'https://todo-e2dsoxqi3-manoj-kumar-gaddameedis-projects.vercel.app/', // replace with your Vercel domain
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     credentials: true
     }));                            // Allow cross-origin requests (frontend-backend)

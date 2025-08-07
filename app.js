@@ -9,7 +9,11 @@
 
     const app = express();                        // Create an Express app
 
-    app.use(cors());                              // Allow cross-origin requests (frontend-backend)
+    app.use(cors({
+    origin: 'https://todoappse.netlify.app/', // replace with your Vercel domain
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    credentials: true
+    }));                            // Allow cross-origin requests (frontend-backend)
     app.use(express.json());                      // Parse incoming JSON requests
 
     app.use('/api/todos', todoRoutes);            // Use all routes in todoRoutes under this base path

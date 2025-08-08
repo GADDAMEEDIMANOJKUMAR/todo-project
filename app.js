@@ -10,13 +10,13 @@ dotenv.config(); // Load .env variables
 const app = express(); // Create an Express app
 
  
-app.use(cors({
-origin: 'https://todo-frontend-1-caww.onrender.com/', // replace with your Vercel domain
-methods: ['GET', 'POST', 'PUT', 'DELETE'],
-credentials: true
-})); // Allow cross-origin requests (frontend-backend)
+// app.use(cors({
+// origin: 'https://todo-frontend-1-caww.onrender.com/', // replace with your Vercel domain
+// methods: ['GET', 'POST', 'PUT', 'DELETE'],
+// credentials: true
+// })); // Allow cross-origin requests (frontend-backend)
 
-app.use(express.json());                      // Parse incoming JSON requests
+// app.use(express.json());                      // Parse incoming JSON requests
 
 // app.use(cors({
 // origin: "https://todo-frontend-1-caww.onrender.com", // replace with your Vercel domain

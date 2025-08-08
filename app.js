@@ -16,14 +16,11 @@ const app = express(); // Create an Express app
 // credentials: true
 // })); // Allow cross-origin requests (frontend-backend)
 
-// app.use(express.json());                      // Parse incoming JSON requests
 
-// app.use(cors({
-// origin: "https://todo-frontend-1-caww.onrender.com", // replace with your Vercel domain
-// methods: ['GET', 'POST', 'PUT', 'DELETE'],
-// credentials: true
-// })); // Allow cross-origin requests (frontend-backend)
-
+const allowedOrigins = [
+  'http://localhost:5173',
+  'https://todo-frontend-1-caww.onrender.com',
+];
 app.use(
   cors({
     origin: function (origin, callback) {

@@ -37,7 +37,7 @@ app.use(
 
 app.use(express.json()); // Parse incoming JSON requests
 
-app.use("/api/todos", todoRoutes); // Use all routes in todoRoutes under this base path
+app.use("/", todoRoutes); // Use all routes in todoRoutes under this base path
 
 const PORT = process.env.PORT || 5000; // Choose port from .env or default to 5000
 
